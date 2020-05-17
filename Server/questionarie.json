@@ -1,0 +1,58 @@
+{
+  "compatibleUnits": [
+    [
+      "Kelvin",
+      "Celsius",
+      "Fahrenheit",
+      "Rankine"
+    ],
+    [
+      "Liter",
+      "Table spoon",
+      "Cup",
+      "Gallon",
+      "Cubic inch",
+      "Cubic feet"
+    ]
+  ],
+  "questions": [
+    {
+      "caption": "Input numeric value",
+      "choice": []
+    },
+    {
+      "caption": "Input unit of measure",
+      "choice": [
+        "Kelvin",
+        "Celsius",
+        "Fahrenheit",
+        "Rankine",
+        "Liter",
+        "Table spoon",
+        "Cubic inch",
+        "Cup",
+        "Cubic feet",
+        "Gallon"
+      ]
+    },
+    {
+      "caption": "Target unit of measure",
+      "choice": [
+        "Kelvin",
+        "Celsius",
+        "Fahrenheit",
+        "Rankine",
+        "Liter",
+        "Table spoon",
+        "Cubic inch",
+        "Cup",
+        "Cubic feet",
+        "Gallon"
+      ]
+    },
+    {
+      "caption": "Student's numeric response",
+      "choice": []
+    }
+  ]
+}
