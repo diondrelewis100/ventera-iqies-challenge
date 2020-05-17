@@ -3,10 +3,12 @@ const bodyParser = require('body-parser');
 var express = require("express");
 var app = express();
 const cors = require("cors");
+const path = require("path");
 // Parse incoming requests data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
+app.use(express.static(path.join(__dirname, 'static')));
 // configure the get end point
 app.get("/validateInput", (req, res, next) => {
 
@@ -49,7 +51,7 @@ app.get("/validateInput", (req, res, next) => {
     }
 });
 app.get('*', (req,res) =>{
-    res.sendFile(path.join(__dirname+'/Client/build/index.html'));
+    res.sendFile(path.join(__dirname+'/static/index.html'));
 });
 
 // start express server
